@@ -14,9 +14,10 @@ Setup docker image
 Method 1: Building
 ------------------
 
-    # docker build --rm -t <username>/armhf-node:5.8.0 .
+    # docker build --rm -t <username>/armhf-node .
 
 Method 2: Pull from Docker Hub
 ------------------------------
 
-    # docker pull docker.io/<username>armhf-node:5.8.0
+    # docker pull docker.io/<username>/armhf-node
+
