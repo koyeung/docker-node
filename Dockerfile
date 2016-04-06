@@ -1,8 +1,8 @@
-FROM armhf/alpine:3.3
+FROM alpine:3.3
 MAINTAINER King-On Yeung <koyeung@gmail.com>
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 5.8.0
+ENV NODE_VERSION 5.10.1
 
 # gpg keys listed at https://github.com/nodejs/node
 RUN set -ex \
