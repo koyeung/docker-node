@@ -30,7 +30,7 @@ RUN set -ex \
   && tar -xJf "node-v$NODE_VERSION.tar.xz" -C /usr/local \
   && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
   && cd /usr/local/node-v$NODE_VERSION \
-  && ./configure --prefix=/usr --shared-zlib --shared-libuv --shared-openssl \
+  && ./configure --prefix=/usr --shared-zlib --shared-libuv --shared-openssl --without-snapshot \
   && make \
   && make install \
   && cd / \
