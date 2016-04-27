@@ -6,11 +6,11 @@ ENV NODE_VERSION 6.0.0
 
 # gpg keys listed at https://github.com/nodejs/node
 RUN set -ex \
-  && apk add --no-cache tar xz zlib libuv openssl libstdc++ libgcc \
+  && apk add --no-cache tar xz zlib openssl libstdc++ libgcc \
   && apk add --no-cache --virtual .setup-deps \
     gpgme curl \
     gcc g++ python make binutils-gold \
-    linux-headers zlib-dev libuv-dev openssl-dev \
+    linux-headers zlib-dev openssl-dev \
   && for key in \
     9554F04D7259F04124DE6B476D5A82AC7E37093B \
     94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
