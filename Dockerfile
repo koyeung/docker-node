@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM armhf/alpine:3.3
 MAINTAINER King-On Yeung <koyeung@gmail.com>
 
 ENV NPM_CONFIG_LOGLEVEL info
